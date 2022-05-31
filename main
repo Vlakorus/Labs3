@@ -20,7 +20,7 @@ fun main(){
     print("Страна изготовитель: ")
     println(Mobile1.country)
 
-    Mobile1.newMobile = true
+    Mobile1.newMobile = false
     println()
     Mobile1.strana = false
     println()
