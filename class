@@ -1,6 +1,5 @@
-class Mobile(var weight: Double, var size: Int, var Ram: Int,
-          val color: String,val marka: String, val model: String, val country: String ) {
-
+class Mobile(var weight: Double, var size: Int, var Charge: Int, val color: String,val marka: String, val model: String, val country: String ) 
+{
     var newMobile: Boolean = true
         get() {
             return weight > size
@@ -14,22 +13,10 @@ class Mobile(var weight: Double, var size: Int, var Ram: Int,
             }
             field = value
         }
-    var strana: Boolean = true
+
+    var zariad: Boolean = true
         get() {
-            return country != "Россия"
-        }
-        set(value) {
-            if (value){
-                print("Это заграничный телефон")
-            }
-            else {
-                print("Телефон отечественный")
-            }
-            field = value
-        }
-    var benzin: Boolean = true
-        get() {
-            return Ram != 0
+            return Charge != 0
         }
         set(value) {
             if (value){
@@ -40,7 +27,7 @@ class Mobile(var weight: Double, var size: Int, var Ram: Int,
             }
             field = value
         }
-    var peregruzka: Boolean = true
+    var ves: Boolean = true
         get() {
             return weight > size
         }
@@ -53,9 +40,24 @@ class Mobile(var weight: Double, var size: Int, var Ram: Int,
             }
             field = value
         }
-    var polnyi: Boolean = true
+
+    var strana: Boolean = true
         get() {
-            return Ram == 40
+            return country != "США"
+        }
+        set(value) {
+            if (value){
+                print("Телефон из другой страны")
+            }
+            else {
+                print("Это телефон из Соединенных Штатов")
+            }
+            field = value
+        }
+
+    var polnyiz: Boolean = true
+        get() {
+            return Charge == 100
         }
         set(value) {
             if (value){
