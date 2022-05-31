@@ -1,20 +1,22 @@
 fun main(){
 
-    val Mobile1 = Mobile(755.5, 800, 40, "Black", "Lada", "ВАЗ 2112", "Россия" )
-    val Mobile2 = Mobile(760.7, 900, 40, "White", "Toyota", "Camry", "Япония" )
-    val Mobile3 = Mobile(800.5, 950, 40, "Blue", "Mercedes", "Maybach", "Германия" )
-    print("Вес: ")
-    println(Mobile1.weight)
-    print("Размер: ")
-    println(Mobile1.size)
+    val Mobile1 = Mobile(1238.2,  1100, 100, "Black", "ipad", "2018 pro", "США" )
+    val Mobile2 = Mobile(200.0, 440, 24, "White", "Samsung", "A51", "Корея" )
+    val Mobile3 = Mobile(250.0, 400, 0, "Blue", "Honor", "8x", "Китай" )
+
+
     print("Заряд: ")
-    println(Mobile1.Ram)
+    println(Mobile1.Charge)
     print("Цвет: ")
     println(Mobile1.color)
     print("Марка: ")
     println(Mobile1.marka)
     print("Модель: ")
     println(Mobile1.model)
+    print("диагональ: ")
+    println(Mobile1.size)
+    print("Вес: ")
+    println(Mobile1.weight)
     print("Страна изготовитель: ")
     println(Mobile1.country)
 
@@ -22,11 +24,11 @@ fun main(){
     println()
     Mobile1.strana = false
     println()
-    Mobile1.benzin = true
+    Mobile1.zariad = true
     println()
-    Mobile1.peregruzka = false
+    Mobile1.ves = false
     println()
-    Mobile1.polnyi = false
+    Mobile1.polnyiz = true
     println("\n")
 
 
@@ -35,7 +37,7 @@ fun main(){
     print("Размер: ")
     println(Mobile2.size)
     print("Заряд: ")
-    println(Mobile2.Ram)
+    println(Mobile2.Charge)
     print("Цвет: ")
     println(Mobile2.color)
     print("Марка: ")
@@ -49,11 +51,11 @@ fun main(){
     println()
     Mobile2.strana = true
     println()
-    Mobile2.benzin = true
+    Mobile2.zariad = true
     println()
-    Mobile2.peregruzka = false
+    Mobile2.ves = false
     println()
-    Mobile2.polnyi = false
+    Mobile2.polnyiz = false
     println("\n")
 
 
@@ -62,7 +64,7 @@ fun main(){
     print("Размер: ")
     println(Mobile3.size)
     print("Заряд: ")
-    println(Mobile3.Ram)
+    println(Mobile3.Charge)
     print("Цвет: ")
     println(Mobile3.color)
     print("Марка: ")
@@ -76,9 +78,9 @@ fun main(){
     println()
     Mobile3.strana = true
     println()
-    Mobile3.benzin = true
+    Mobile3.zariad = false
     println()
-    Mobile3.peregruzka = false
+    Mobile3.ves = false
     println()
-    Mobile3.polnyi = false
+    Mobile3.polnyiz = false
 }
