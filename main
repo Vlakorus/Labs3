@@ -1,0 +1,84 @@
+fun main(){
+
+    val Mobile1 = Mobile(755.5, 800, 40, "Black", "Lada", "ВАЗ 2112", "Россия" )
+    val Mobile2 = Mobile(760.7, 900, 40, "White", "Toyota", "Camry", "Япония" )
+    val Mobile3 = Mobile(800.5, 950, 40, "Blue", "Mercedes", "Maybach", "Германия" )
+    print("Вес: ")
+    println(Mobile1.weight)
+    print("Размер: ")
+    println(Mobile1.size)
+    print("Заряд: ")
+    println(Mobile1.Ram)
+    print("Цвет: ")
+    println(Mobile1.color)
+    print("Марка: ")
+    println(Mobile1.marka)
+    print("Модель: ")
+    println(Mobile1.model)
+    print("Страна изготовитель: ")
+    println(Mobile1.country)
+
+    Mobile1.newMobile = true
+    println()
+    Mobile1.strana = false
+    println()
+    Mobile1.benzin = true
+    println()
+    Mobile1.peregruzka = false
+    println()
+    Mobile1.polnyi = false
+    println("\n")
+
+
+    print("Вес: ")
+    println(Mobile2.weight)
+    print("Размер: ")
+    println(Mobile2.size)
+    print("Заряд: ")
+    println(Mobile2.Ram)
+    print("Цвет: ")
+    println(Mobile2.color)
+    print("Марка: ")
+    println(Mobile2.marka)
+    print("Модель: ")
+    println(Mobile2.model)
+    print("Страна изготовитель: ")
+    println(Mobile2.country)
+
+    Mobile2.newMobile = true
+    println()
+    Mobile2.strana = true
+    println()
+    Mobile2.benzin = true
+    println()
+    Mobile2.peregruzka = false
+    println()
+    Mobile2.polnyi = false
+    println("\n")
+
+
+    print("Вес: ")
+    println(Mobile3.weight)
+    print("Размер: ")
+    println(Mobile3.size)
+    print("Заряд: ")
+    println(Mobile3.Ram)
+    print("Цвет: ")
+    println(Mobile3.color)
+    print("Марка: ")
+    println(Mobile3.marka)
+    print("Модель: ")
+    println(Mobile3.model)
+    print("Страна изготовитель: ")
+    println(Mobile3.country)
+
+    Mobile3.newMobile = true
+    println()
+    Mobile3.strana = true
+    println()
+    Mobile3.benzin = true
+    println()
+    Mobile3.peregruzka = false
+    println()
+    Mobile3.polnyi = false
+}
