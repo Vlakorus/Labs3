@@ -1,0 +1,69 @@
+class Mobile(var weight: Double, var size: Int, var Ram: Int,
+          val color: String,val marka: String, val model: String, val country: String ) {
+
+    var newMobile: Boolean = true
+        get() {
+            return weight > size
+        }
+        set(value) {
+            if (value){
+                print("Телефон новый")
+            }
+            else {
+                print("Телефон бу")
+            }
+            field = value
+        }
+    var strana: Boolean = true
+        get() {
+            return country != "Россия"
+        }
+        set(value) {
+            if (value){
+                print("Это заграничный телефон")
+            }
+            else {
+                print("Телефон отечественный")
+            }
+            field = value
+        }
+    var benzin: Boolean = true
+        get() {
+            return Ram != 0
+        }
+        set(value) {
+            if (value){
+                print("телефон заряжен")
+            }
+            else {
+                print("телефон разряжен")
+            }
+            field = value
+        }
+    var peregruzka: Boolean = true
+        get() {
+            return weight > size
+        }
+        set(value) {
+            if (value){
+                print("Телефон трудно держать в руке")
+            }
+            else {
+                print("Телефон удобен")
+            }
+            field = value
+        }
+    var polnyi: Boolean = true
+        get() {
+            return Ram == 40
+        }
+        set(value) {
+            if (value){
+                print("Полный заряд")
+            }
+            else {
+                print("требуется зарядить")
+            }
+            field = value
+        }
+}
